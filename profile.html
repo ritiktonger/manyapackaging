@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile — Manya Packaging</title>
+  <link rel="icon" type="image" href="assets/logo.jpeg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <!-- Simple SVG mark -->
+    <img src="assets/logo.jpeg" alt="logo">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1">
+          <stop offset="0" stop-color="#0ea5e9"/>
+          <stop offset="1" stop-color="#6366f1"/>
+        </linearGradient>
+      </defs>
+      <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#g)"/>
+      <path d="M7 14h10l-1-4H8l-1 4z" fill="#fff"/>
+    </svg>
+    <span class="brand">MANYA PACKAGING</span>
+  </div>
+
+  <nav class="menu" aria-label="Primary">
+    <a href="index.html" >Home</a>
+    <a href="about.html">About Us</a>
+    <a href="profile.html">Profile</a>
+    <a href="products.html">Products</a>
+    <a href="machinery.html">Our Machinery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <div class="right">
+    <button class="search-btn" aria-label="Open search">🔍</button>
+    <div class="contact">
+      <a href="mailto:info@example.com">manyapackaging41@gmail.com</a>
+      <span>+91 9710581010</span>
+      <span>+91 8954720212</span>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<div class="search-bar" role="search">
+  <input type="text" placeholder="Search products…" aria-label="Search" />
+  <button class="btn">Search</button>
+</div>
+
+
+<section class="section">
+  <div class="container">
+    <h2>Company Profile</h2>
+    <p>Infrastructure of Manya Packaging</p>
+    <div class="grid">
+      <div class="card photo"><img src="assets/imagesss.jpg" alt="Machine 1"/></div>
+      <div class="card photo"><img src="assets/imagesssss.jpg" alt="Machine 2"/></div>
+      <div class="card photo"><img src="assets/factory.png" alt="Machine 3"/></div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo small">
+        <img src="assets/logo.jpeg" alt="logo">
+        <span class="brand">MANYA PACKAGING</span>
+      </div>
+      <p>© <span id="year"></span> Your Company. All rights reserved.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <ul class="links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="machinery.html">Machinery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <form class="newsletter" onsubmit="event.preventDefault(); alert('Subscribed!')">
+        <input type="email" placeholder="Your email" required />
+        <button class="btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
